@@ -1,0 +1,4376 @@
+{
+  "config": {
+    "speedOfSound": 343,
+    "airDensity": 1.2,
+    "boreRadius": 0.0045,
+    "boreLengthClosed": 0.3,
+    "holeCount": 8,
+    "holeSemitones": 1,
+    "holeRadius": 0.004,
+    "mouthpieceEndCorrection": 0.0044,
+    "bellReflection": 0.985,
+    "reflectionLowpass": 0.12,
+    "reed": {
+      "restGap": 0.0005,
+      "compliance": 1.8e-7,
+      "maxGapFactor": 1,
+      "resonanceHz": 2800,
+      "dampingRatio": 0.5,
+      "width": 0.012,
+      "dischargeCoeff": 0.6,
+      "leakage": 0.0000015,
+      "lowPressureSmooth": 30,
+      "maxVelocity": 40
+    },
+    "reedPhaseTrim": true,
+    "reedEndPhaseDelaySeconds": 0.000022,
+    "fingeringGlideSeconds": 0.008,
+    "holeMask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "maxMouthPressure": 5000,
+    "maxBorePressure": 40000,
+    "maxValveFlow": 0.004,
+    "oversampling": 2,
+    "interpolation": "cubic",
+    "audio": {
+      "gain": 0.0002380952380952381,
+      "dcPole": 0.995,
+      "saturation": 0.92
+    },
+    "injection": {
+      "active": false,
+      "amplitude": 0.0001,
+      "frequency": 5
+    }
+  },
+  "fs": 48000,
+  "generatedAt": "2026-11-18T23:11:39.270Z",
+  "pitchTable": [
+    {
+      "openCount": 0,
+      "name": "all closed",
+      "acousticLengthM": 0.3071585,
+      "predictedHz": 279.1718282254927,
+      "measuredHz": 278.96949399583343,
+      "fftHz": 278.83232826420715,
+      "centsError": -1.2551943713044404,
+      "peakBorePa": 3156.544921875,
+      "peakAudio": 0.8932141661643982
+    },
+    {
+      "openCount": 1,
+      "name": "1 open",
+      "acousticLengthM": 0.28956229380450804,
+      "predictedHz": 296.1366235684413,
+      "measuredHz": 295.9088350010342,
+      "fftHz": 295.9061408442796,
+      "centsError": -1.332179269798203,
+      "peakBorePa": 3157.63037109375,
+      "peakAudio": 0.8912590742111206
+    },
+    {
+      "openCount": 2,
+      "name": "2 open",
+      "acousticLengthM": 0.2736696154421018,
+      "predictedHz": 313.33401722903903,
+      "measuredHz": 313.07896502128307,
+      "fftHz": 313.1726638178424,
+      "centsError": -1.409789079310361,
+      "peakBorePa": 3160.062744140625,
+      "peakAudio": 0.889422595500946
+    },
+    {
+      "openCount": 3,
+      "name": "3 open",
+      "acousticLengthM": 0.2586689245761144,
+      "predictedHz": 331.5048382426305,
+      "measuredHz": 331.2194860356316,
+      "fftHz": 331.1786543206856,
+      "centsError": -1.490850627219302,
+      "peakBorePa": 3152.627685546875,
+      "peakAudio": 0.887568473815918
+    },
+    {
+      "openCount": 4,
+      "name": "4 open",
+      "acousticLengthM": 0.2445101577952299,
+      "predictedHz": 350.701176479601,
+      "measuredHz": 350.38090709943157,
+      "fftHz": 350.5021194743776,
+      "centsError": -1.5817300352668797,
+      "peakBorePa": 3154.28857421875,
+      "peakAudio": 0.8857743144035339
+    },
+    {
+      "openCount": 5,
+      "name": "5 open",
+      "acousticLengthM": 0.23114606153150222,
+      "predictedHz": 370.9775517343755,
+      "measuredHz": 370.62131552954565,
+      "fftHz": 370.6315881081528,
+      "centsError": -1.6632395813207448,
+      "peakBorePa": 3159.765625,
+      "peakAudio": 0.8841592073440552
+    },
+    {
+      "openCount": 6,
+      "name": "6 open",
+      "acousticLengthM": 0.21853203435596422,
+      "predictedHz": 392.3909840162054,
+      "measuredHz": 391.99055316579995,
+      "fftHz": 392.11896796478453,
+      "centsError": -1.7676081087584825,
+      "peakBorePa": 3160.7607421875,
+      "peakAudio": 0.8825027346611023
+    },
+    {
+      "openCount": 7,
+      "name": "7 open",
+      "acousticLengthM": 0.20662597812550512,
+      "predictedHz": 415.0010602631739,
+      "measuredHz": 414.55413378973697,
+      "fftHz": 414.5565761425611,
+      "centsError": -1.8654199471008415,
+      "peakBorePa": 3152.149169921875,
+      "peakAudio": 0.8808512091636658
+    },
+    {
+      "openCount": 8,
+      "name": "all open",
+      "acousticLengthM": 0.19538815748423097,
+      "predictedHz": 438.86999654480366,
+      "measuredHz": 438.36559629914035,
+      "fftHz": 438.51596140358924,
+      "centsError": -1.9908790363894457,
+      "peakBorePa": 3158.511962890625,
+      "peakAudio": 0.8793478608131409
+    }
+  ],
+  "numerics": [
+    {
+      "oversampling": 1,
+      "interpolation": "linear",
+      "measuredHz": 279.19017354172155,
+      "centsVsGeometric": 0.11376145227387434
+    },
+    {
+      "oversampling": 1,
+      "interpolation": "cubic",
+      "measuredHz": 279.21545567012026,
+      "centsVsGeometric": 0.2705266396464567
+    },
+    {
+      "oversampling": 2,
+      "interpolation": "linear",
+      "measuredHz": 278.96303553950423,
+      "centsVsGeometric": -1.2952748430825258
+    },
+    {
+      "oversampling": 2,
+      "interpolation": "cubic",
+      "measuredHz": 278.96949399583343,
+      "centsVsGeometric": -1.2551943713044404
+    },
+    {
+      "oversampling": 4,
+      "interpolation": "linear",
+      "measuredHz": 278.8453855420624,
+      "centsVsGeometric": -2.0255602843428164
+    },
+    {
+      "oversampling": 4,
+      "interpolation": "cubic",
+      "measuredHz": 278.84649208368836,
+      "centsVsGeometric": -2.018690245109873
+    }
+  ],
+  "ramp": {
+    "description": "mouth pressure rises linearly to 3 kPa over 1.2 s, holds to 2 s, then releases",
+    "windows": [
+      {
+        "tStart": 0.1,
+        "hz": 0,
+        "rms": 0.018813303646287097,
+        "peak": 0.030168365769916328
+      },
+      {
+        "tStart": 0.3,
+        "hz": 0,
+        "rms": 0.12500870599350847,
+        "peak": 0.24716430200470807
+      },
+      {
+        "tStart": 0.5,
+        "hz": 273.7534821522131,
+        "rms": 637.7225906096396,
+        "peak": 1767.945467722211
+      },
+      {
+        "tStart": 0.7,
+        "hz": 277.09067456085995,
+        "rms": 1923.1881821284599,
+        "peak": 2289.8239328374466
+      },
+      {
+        "tStart": 0.9,
+        "hz": 278.1968694250846,
+        "rms": 2415.35398420981,
+        "peak": 2760.415004329019
+      },
+      {
+        "tStart": 1.1,
+        "hz": 278.8748701735492,
+        "rms": 2886.7900314372505,
+        "peak": 3163.895678535493
+      },
+      {
+        "tStart": 1.4,
+        "hz": 278.96972070181965,
+        "rms": 2967.965209480619,
+        "peak": 3163.0823305927715
+      },
+      {
+        "tStart": 1.8,
+        "hz": 278.9694338909802,
+        "rms": 2967.9566685243244,
+        "peak": 3145.1890505223805
+      },
+      {
+        "tStart": 2.05,
+        "hz": 1363.0082002161794,
+        "rms": 0.00010788690319968777,
+        "peak": 0.0009103605637089436
+      },
+      {
+        "tStart": 2.2,
+        "hz": 1011.301401213109,
+        "rms": 7.59273731868524e-19,
+        "peak": 6.1704455557294015e-18
+      },
+      {
+        "tStart": 2.5,
+        "hz": 1410.137708602794,
+        "rms": 2.5203216059146786e-26,
+        "peak": 6.157783443709378e-26
+      }
+    ],
+    "onsetThreshold": {
+      "timeS": 0.61,
+      "mouthPa": 1525,
+      "windowLevelPa": 1570.4219163023586,
+      "transientFirstSampleS": 0.60325
+    }
+  },
+  "step": {
+    "description": "mouth pressure steps from 0 to 3 kPa at 0.25 s and back to 0 at 1.75 s",
+    "attack50ms": 0.259,
+    "attackTo90OfPeakS": 0.030854166666666683,
+    "attackFrom10To90S": 0.029020833333333333,
+    "steadyEnv": 0.8684477579923638,
+    "sampleValues": [
+      {
+        "dtS": -0.001,
+        "env": 0
+      },
+      {
+        "dtS": 0,
+        "env": 0.009963808336389214
+      },
+      {
+        "dtS": 0.002,
+        "env": 0.10258070649638887
+      },
+      {
+        "dtS": 0.005,
+        "env": 0.16162177985415974
+      },
+      {
+        "dtS": 0.01,
+        "env": 0.41394936886496514
+      },
+      {
+        "dtS": 0.02,
+        "env": 0.7290759708390208
+      }
+    ],
+    "startAmplitude": 0.24957563616680867,
+    "steadyAmplitude": 0.831255350116059,
+    "release": {
+      "tau": 0.10000449897699845,
+      "r2": 0.999999833505025,
+      "samples": 40800
+    },
+    "finalState": {
+      "p": -1.459672669500201e-27,
+      "pPlus": -7.298363347501005e-28,
+      "pMinus": -7.298363347501005e-28,
+      "flow": 0,
+      "gap": 0.0004999999999999998,
+      "gapTarget": 0.0005,
+      "deltaP": 1.1498491841884506e-27,
+      "audio": 0,
+      "mouth": 0,
+      "openCount": 0,
+      "delaySamples": 169.61083381924198,
+      "fault": null
+    }
+  },
+  "rampSpeed": {
+    "description": "audible (sustained, tonal) onset pressure vs ramp speed at 48 kHz",
+    "points": [
+      {
+        "rampSeconds": 0.15,
+        "onsetS": 0.14,
+        "onsetPa": 2400
+      },
+      {
+        "rampSeconds": 0.3,
+        "onsetS": 0.24,
+        "onsetPa": 2200
+      },
+      {
+        "rampSeconds": 0.6,
+        "onsetS": 0.38,
+        "onsetPa": 1800
+      },
+      {
+        "rampSeconds": 1.2,
+        "onsetS": 0.63,
+        "onsetPa": 1525
+      }
+    ]
+  },
+  "criticalRegion": {
+    "description": "fine pressure sweep through the oscillation threshold; RMS over the last second",
+    "points": [
+      {
+        "mouthPa": 600,
+        "rmsAudio": 0,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 650,
+        "rmsAudio": 0,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 700,
+        "rmsAudio": 9.525145568696309e-17,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 750,
+        "rmsAudio": 3.6623589729031917e-17,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 800,
+        "rmsAudio": 0,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 850,
+        "rmsAudio": 3.607807408917409e-17,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 900,
+        "rmsAudio": 2.767532984854904e-14,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 950,
+        "rmsAudio": 0.00006963493550736224,
+        "measuredHz": 0
+      },
+      {
+        "mouthPa": 1000,
+        "rmsAudio": 0.18181278512575558,
+        "measuredHz": 276.50412751170825
+      },
+      {
+        "mouthPa": 1050,
+        "rmsAudio": 0.2782294111124443,
+        "measuredHz": 276.17763596066453
+      },
+      {
+        "mouthPa": 1100,
+        "rmsAudio": 0.342219888078673,
+        "measuredHz": 275.920801404391
+      },
+      {
+        "mouthPa": 1150,
+        "rmsAudio": 0.3906517450582013,
+        "measuredHz": 275.7057826576054
+      },
+      {
+        "mouthPa": 1200,
+        "rmsAudio": 0.4296079053959703,
+        "measuredHz": 275.520871197669
+      },
+      {
+        "mouthPa": 1250,
+        "rmsAudio": 0.46754953439608593,
+        "measuredHz": 275.352314680395
+      },
+      {
+        "mouthPa": 1300,
+        "rmsAudio": 0.5004526877583905,
+        "measuredHz": 275.2025906144813
+      },
+      {
+        "mouthPa": 1350,
+        "rmsAudio": 0.5201650384985291,
+        "measuredHz": 275.1320601270313
+      },
+      {
+        "mouthPa": 1400,
+        "rmsAudio": 0.5417523788539432,
+        "measuredHz": 275.2570294696039
+      },
+      {
+        "mouthPa": 1450,
+        "rmsAudio": 0.5566519579402136,
+        "measuredHz": 275.4069754358213
+      },
+      {
+        "mouthPa": 1500,
+        "rmsAudio": 0.5710155829331403,
+        "measuredHz": 275.5850352006166
+      }
+    ],
+    "firstSustained": {
+      "mouthPa": 1000,
+      "rmsAudio": 0.18181278512575558,
+      "measuredHz": 276.50412751170825
+    },
+    "firstAudibleHz": {
+      "mouthPa": 1000,
+      "rmsAudio": 0.18181278512575558,
+      "measuredHz": 276.50412751170825
+    }
+  },
+  "fingeringsFile": "fingerings.wav (nine 0.5 s notes, one per open-hole count)",
+  "demoPhrase": {
+    "description": "legato phrase: continuous breath with stepwise fingering 0→2→4→6→8, one dip near threshold, then release. Raw core output scaled to -1 dBFS for playback.",
+    "rawPeakBeforeNormalization": 0.8701732158660889,
+    "normalizationGain": 1.0227848706124303,
+    "fingeringChanges": [
+      {
+        "t": 0.55,
+        "openCount": 2
+      },
+      {
+        "t": 0.9,
+        "openCount": 4
+      },
+      {
+        "t": 1.65,
+        "openCount": 6
+      },
+      {
+        "t": 2.05,
+        "openCount": 8
+      },
+      {
+        "t": 3.45,
+        "openCount": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 0,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 0.1,
+        "mouth": 1200,
+        "openCount": 0,
+        "p": 1092.1,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 0.2,
+        "mouth": 1200,
+        "openCount": 0,
+        "p": -1082.4,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 0.3,
+        "mouth": 1200,
+        "openCount": 0,
+        "p": 717.8,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 0.4,
+        "mouth": 1200,
+        "openCount": 0,
+        "p": 871.4,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 0.5,
+        "mouth": 1200,
+        "openCount": 0,
+        "p": -1109.8,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 0.6,
+        "mouth": 1200,
+        "openCount": 2,
+        "p": -878.2,
+        "delaySamples": 150.9
+      },
+      {
+        "t": 0.7,
+        "mouth": 1200,
+        "openCount": 2,
+        "p": 1093.8,
+        "delaySamples": 150.86
+      },
+      {
+        "t": 0.8,
+        "mouth": 1200,
+        "openCount": 2,
+        "p": 1091.5,
+        "delaySamples": 150.86
+      },
+      {
+        "t": 0.9,
+        "mouth": 1202,
+        "openCount": 4,
+        "p": 1092.6,
+        "delaySamples": 150.82
+      },
+      {
+        "t": 1,
+        "mouth": 1600,
+        "openCount": 4,
+        "p": 1662.6,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.1,
+        "mouth": 1600,
+        "openCount": 4,
+        "p": 552.9,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.2,
+        "mouth": 1600,
+        "openCount": 4,
+        "p": -1646.8,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.3,
+        "mouth": 2800,
+        "openCount": 4,
+        "p": 2853.5,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.4,
+        "mouth": 2800,
+        "openCount": 4,
+        "p": 2853.5,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.5,
+        "mouth": 2800,
+        "openCount": 4,
+        "p": 2853.5,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.6,
+        "mouth": 2800,
+        "openCount": 4,
+        "p": 2853.4,
+        "delaySamples": 134.54
+      },
+      {
+        "t": 1.7,
+        "mouth": 2800,
+        "openCount": 6,
+        "p": 2853.3,
+        "delaySamples": 120.03
+      },
+      {
+        "t": 1.8,
+        "mouth": 2800,
+        "openCount": 6,
+        "p": 2853.3,
+        "delaySamples": 120
+      },
+      {
+        "t": 1.9,
+        "mouth": 2800,
+        "openCount": 6,
+        "p": 2856.5,
+        "delaySamples": 120
+      },
+      {
+        "t": 2,
+        "mouth": 2800,
+        "openCount": 6,
+        "p": -2852.8,
+        "delaySamples": 120
+      },
+      {
+        "t": 2.1,
+        "mouth": 2800,
+        "openCount": 8,
+        "p": -2852.9,
+        "delaySamples": 107.07
+      },
+      {
+        "t": 2.2,
+        "mouth": 2800,
+        "openCount": 8,
+        "p": 2856.7,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.3,
+        "mouth": 2800,
+        "openCount": 8,
+        "p": 2853.3,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.4,
+        "mouth": 2800,
+        "openCount": 8,
+        "p": 1321.3,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.5,
+        "mouth": 2790,
+        "openCount": 8,
+        "p": -2852.5,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.6,
+        "mouth": 900,
+        "openCount": 8,
+        "p": 6.5,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.7,
+        "mouth": 900,
+        "openCount": 8,
+        "p": 4.5,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.8,
+        "mouth": 900,
+        "openCount": 8,
+        "p": 4.5,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 2.9,
+        "mouth": 900,
+        "openCount": 8,
+        "p": 4.5,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 3,
+        "mouth": 0,
+        "openCount": 8,
+        "p": 0,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 3.1,
+        "mouth": 0,
+        "openCount": 8,
+        "p": 0,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 3.2,
+        "mouth": 0,
+        "openCount": 8,
+        "p": 0,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 3.3,
+        "mouth": 0,
+        "openCount": 8,
+        "p": 0,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 3.4,
+        "mouth": 0,
+        "openCount": 8,
+        "p": 0,
+        "delaySamples": 107.05
+      },
+      {
+        "t": 3.5,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.49
+      },
+      {
+        "t": 3.6,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 3.7,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 3.8,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 3.9,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 4,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      },
+      {
+        "t": 4.1,
+        "mouth": 0,
+        "openCount": 0,
+        "p": 0,
+        "delaySamples": 169.61
+      }
+    ],
+    "fault": null
+  },
+  "tail": {
+    "description": "3 kPa for 1.0 s, then mouth pressure 0; observe bore pressure and audio",
+    "decayTauAudio": {
+      "tau": 0.1000017243127785,
+      "r2": 0.9999999697538341,
+      "samples": 55356
+    },
+    "stateSnapshots": {
+      "2": {
+        "t": 2,
+        "p": 6.358637250178562e-28,
+        "flow": 0,
+        "gap": 0.0004999999999999998,
+        "pPlus": 3.179318625089281e-28,
+        "pMinus": 3.179318625089281e-28
+      },
+      "1.02": {
+        "t": 1.02,
+        "p": -0.5990110548496059,
+        "flow": 5.031731720748463e-7,
+        "gap": 0.0004998957726214299,
+        "pPlus": 1.328260649638586,
+        "pMinus": -1.927271704488192
+      },
+      "1.1": {
+        "t": 1.1,
+        "p": -1.8794127679531176e-8,
+        "flow": 1.5947346149315863e-14,
+        "gap": 0.0004999999999966261,
+        "pPlus": 4.2192147793974554e-8,
+        "pMinus": -6.098627547350573e-8
+      },
+      "1.5": {
+        "t": 1.5,
+        "p": 5.765667165519929e-26,
+        "flow": 0,
+        "gap": 0.0004999999999999998,
+        "pPlus": 2.8828335827599646e-26,
+        "pMinus": 2.8828335827599646e-26
+      },
+      "2.9": {
+        "t": 2.9,
+        "p": -2.579632604380817e-31,
+        "flow": 0,
+        "gap": 0.0004999999999999998,
+        "pPlus": -1.2898163021904086e-31,
+        "pMinus": -1.2898163021904086e-31
+      }
+    },
+    "finalState": {
+      "p": 8.265996921609166e-32,
+      "pPlus": 4.132998460804583e-32,
+      "pMinus": 4.132998460804583e-32,
+      "flow": 0,
+      "gap": 0.0004999999999999998,
+      "gapTarget": 0.0005,
+      "deltaP": -7.920640229298282e-32,
+      "audio": 0,
+      "mouth": 0,
+      "openCount": 0,
+      "delaySamples": 169.61083381924198,
+      "fault": null
+    },
+    "pressureTail": [
+      {
+        "t": 1,
+        "rmsPa": 1379.8007978639912
+      },
+      {
+        "t": 1.005,
+        "rmsPa": 42.96900958263334
+      },
+      {
+        "t": 1.01,
+        "rmsPa": 4.707175714452832
+      },
+      {
+        "t": 1.02,
+        "rmsPa": 0.4635143640242594
+      },
+      {
+        "t": 1.05,
+        "rmsPa": 0.0006620638191138085
+      },
+      {
+        "t": 1.1,
+        "rmsPa": 1.2912415158583863e-8
+      },
+      {
+        "t": 1.2,
+        "rmsPa": 4.599441753837956e-18
+      },
+      {
+        "t": 1.5,
+        "rmsPa": 4.392883213068849e-26
+      },
+      {
+        "t": 2,
+        "rmsPa": 5.499888539572075e-28
+      }
+    ],
+    "residualRmsAt2s": 1.4032928067324616e-34,
+    "residualPressureAt2s": 8.265996929113645e-32
+  },
+  "pressurePitch": [
+    {
+      "mouthPa": 1200,
+      "measuredHz": 275.52088357127093,
+      "centsVsGeometric": -22.790027120359888,
+      "peakBorePa": 1116.9312744140625
+    },
+    {
+      "mouthPa": 1800,
+      "measuredHz": 276.71466564536917,
+      "centsVsGeometric": -15.3051073390036,
+      "peakBorePa": 1968.0394287109375
+    },
+    {
+      "mouthPa": 2400,
+      "measuredHz": 278.1420052950079,
+      "centsVsGeometric": -6.3980703285119995,
+      "peakBorePa": 2563.8955078125
+    },
+    {
+      "mouthPa": 3000,
+      "measuredHz": 278.96949399583343,
+      "centsVsGeometric": -1.2551943713044404,
+      "peakBorePa": 3156.544921875
+    },
+    {
+      "mouthPa": 3600,
+      "measuredHz": 279.498933892726,
+      "centsVsGeometric": 2.027299697310629,
+      "peakBorePa": 3745.471435546875
+    },
+    {
+      "mouthPa": 4200,
+      "measuredHz": 279.8740869387579,
+      "centsVsGeometric": 4.349463262915884,
+      "peakBorePa": 4336.82275390625
+    },
+    {
+      "mouthPa": 4800,
+      "measuredHz": 282.74163328500657,
+      "centsVsGeometric": 21.99716375053708,
+      "peakBorePa": 160.84805297851562
+    }
+  ],
+  "delayBudget": {
+    "measuredHz": 278.96949399583343,
+    "budget": {
+      "geometricSeconds": 0.0017910116618075802,
+      "geometricSamples": 171.9371195335277,
+      "fractionalPart": 0.9371195335276923,
+      "lagrangeSamples": 0.9371195337241529,
+      "reflectionLowpassSamples": -0.13635267890090386,
+      "reedPhaseSamples": "nonlinear, measured empirically",
+      "totalSamples": 172.73788638835094,
+      "predictedHzFromBudget": 277.8776619512754
+    },
+    "phaseTrimSamples": 2.112,
+    "lowpassPhaseSamples": 0.21428571428571425,
+    "tubeDelaySamples": 169.61083381924198,
+    "nominalRoundTripSamples": 171.9371195335277
+  },
+  "deliveryTrajectory": {
+    "description": "ramp 0->3 kPa, hold, drop to 950 Pa (near threshold), release to 0",
+    "trace": [
+      {
+        "t": 0,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 0.005,
+        "mouth": 30,
+        "p": 17.32,
+        "flow": 0.000008977,
+        "gap": 497.75,
+        "gapTarget": 497.72,
+        "audio": 0.00402
+      },
+      {
+        "t": 0.01,
+        "mouth": 60,
+        "p": 15.67,
+        "flow": 0.00002352,
+        "gap": 492.08,
+        "gapTarget": 492.03,
+        "audio": 0.00046
+      },
+      {
+        "t": 0.015,
+        "mouth": 90,
+        "p": 11.46,
+        "flow": 0.00003405,
+        "gap": 485.92,
+        "gapTarget": 485.87,
+        "audio": -0.0009
+      },
+      {
+        "t": 0.02,
+        "mouth": 120,
+        "p": 9.63,
+        "flow": 0.00004158,
+        "gap": 480.18,
+        "gapTarget": 480.14,
+        "audio": -0.00072
+      },
+      {
+        "t": 0.025,
+        "mouth": 150,
+        "p": 8.65,
+        "flow": 0.00004764,
+        "gap": 474.61,
+        "gapTarget": 474.56,
+        "audio": -0.00046
+      },
+      {
+        "t": 0.03,
+        "mouth": 180,
+        "p": 7.98,
+        "flow": 0.00005277,
+        "gap": 469.08,
+        "gapTarget": 469.04,
+        "audio": -0.00032
+      },
+      {
+        "t": 0.035,
+        "mouth": 210,
+        "p": 7.56,
+        "flow": 0.00005722,
+        "gap": 463.61,
+        "gapTarget": 463.57,
+        "audio": -0.00021
+      },
+      {
+        "t": 0.04,
+        "mouth": 240,
+        "p": 7.22,
+        "flow": 0.00006115,
+        "gap": 458.15,
+        "gapTarget": 458.1,
+        "audio": -0.00015
+      },
+      {
+        "t": 0.045,
+        "mouth": 270,
+        "p": 6.95,
+        "flow": 0.00006466,
+        "gap": 452.7,
+        "gapTarget": 452.65,
+        "audio": -0.00011
+      },
+      {
+        "t": 0.05,
+        "mouth": 300,
+        "p": 6.73,
+        "flow": 0.00006781,
+        "gap": 447.26,
+        "gapTarget": 447.21,
+        "audio": -0.00009
+      },
+      {
+        "t": 0.055,
+        "mouth": 330,
+        "p": 6.54,
+        "flow": 0.00007066,
+        "gap": 441.82,
+        "gapTarget": 441.78,
+        "audio": -0.00008
+      },
+      {
+        "t": 0.06,
+        "mouth": 360,
+        "p": 6.38,
+        "flow": 0.00007324,
+        "gap": 436.4,
+        "gapTarget": 436.35,
+        "audio": -0.00006
+      },
+      {
+        "t": 0.065,
+        "mouth": 390,
+        "p": 6.24,
+        "flow": 0.00007558,
+        "gap": 430.97,
+        "gapTarget": 430.93,
+        "audio": -0.00006
+      },
+      {
+        "t": 0.07,
+        "mouth": 420,
+        "p": 6.11,
+        "flow": 0.00007771,
+        "gap": 425.55,
+        "gapTarget": 425.5,
+        "audio": -0.00005
+      },
+      {
+        "t": 0.075,
+        "mouth": 450,
+        "p": 5.99,
+        "flow": 0.00007964,
+        "gap": 420.13,
+        "gapTarget": 420.08,
+        "audio": -0.00005
+      },
+      {
+        "t": 0.08,
+        "mouth": 480,
+        "p": 5.89,
+        "flow": 0.0000814,
+        "gap": 414.71,
+        "gapTarget": 414.66,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.085,
+        "mouth": 510,
+        "p": 5.79,
+        "flow": 0.00008299,
+        "gap": 409.29,
+        "gapTarget": 409.24,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.09,
+        "mouth": 540,
+        "p": 5.69,
+        "flow": 0.00008444,
+        "gap": 403.87,
+        "gapTarget": 403.83,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.095,
+        "mouth": 570,
+        "p": 5.6,
+        "flow": 0.00008574,
+        "gap": 398.45,
+        "gapTarget": 398.41,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.1,
+        "mouth": 600,
+        "p": 5.51,
+        "flow": 0.00008691,
+        "gap": 393.04,
+        "gapTarget": 392.99,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.105,
+        "mouth": 630,
+        "p": 5.42,
+        "flow": 0.00008796,
+        "gap": 387.62,
+        "gapTarget": 387.58,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.11,
+        "mouth": 660,
+        "p": 5.34,
+        "flow": 0.00008889,
+        "gap": 382.21,
+        "gapTarget": 382.16,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.115,
+        "mouth": 690,
+        "p": 5.25,
+        "flow": 0.0000897,
+        "gap": 376.79,
+        "gapTarget": 376.75,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.12,
+        "mouth": 720,
+        "p": 5.17,
+        "flow": 0.00009042,
+        "gap": 371.38,
+        "gapTarget": 371.33,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.125,
+        "mouth": 750,
+        "p": 5.09,
+        "flow": 0.00009103,
+        "gap": 365.96,
+        "gapTarget": 365.92,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.13,
+        "mouth": 780,
+        "p": 5,
+        "flow": 0.00009154,
+        "gap": 360.55,
+        "gapTarget": 360.5,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.135,
+        "mouth": 810,
+        "p": 4.92,
+        "flow": 0.00009196,
+        "gap": 355.13,
+        "gapTarget": 355.09,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.14,
+        "mouth": 840,
+        "p": 4.84,
+        "flow": 0.0000923,
+        "gap": 349.72,
+        "gapTarget": 349.67,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.145,
+        "mouth": 870,
+        "p": 4.76,
+        "flow": 0.00009255,
+        "gap": 344.3,
+        "gapTarget": 344.26,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.15,
+        "mouth": 900,
+        "p": 4.67,
+        "flow": 0.00009271,
+        "gap": 338.89,
+        "gapTarget": 338.84,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.155,
+        "mouth": 930,
+        "p": 4.59,
+        "flow": 0.0000928,
+        "gap": 333.47,
+        "gapTarget": 333.43,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.16,
+        "mouth": 960,
+        "p": 4.5,
+        "flow": 0.00009281,
+        "gap": 328.06,
+        "gapTarget": 328.01,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.165,
+        "mouth": 990,
+        "p": 4.42,
+        "flow": 0.00009275,
+        "gap": 322.64,
+        "gapTarget": 322.6,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.17,
+        "mouth": 1020,
+        "p": 4.33,
+        "flow": 0.00009261,
+        "gap": 317.22,
+        "gapTarget": 317.18,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.175,
+        "mouth": 1050,
+        "p": 4.24,
+        "flow": 0.00009241,
+        "gap": 311.81,
+        "gapTarget": 311.77,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.18,
+        "mouth": 1080,
+        "p": 4.15,
+        "flow": 0.00009214,
+        "gap": 306.39,
+        "gapTarget": 306.35,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.185,
+        "mouth": 1110,
+        "p": 4.06,
+        "flow": 0.0000918,
+        "gap": 300.98,
+        "gapTarget": 300.93,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.19,
+        "mouth": 1140,
+        "p": 3.97,
+        "flow": 0.0000914,
+        "gap": 295.56,
+        "gapTarget": 295.52,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.195,
+        "mouth": 1170,
+        "p": 3.88,
+        "flow": 0.00009093,
+        "gap": 290.14,
+        "gapTarget": 290.1,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.2,
+        "mouth": 1200,
+        "p": 3.78,
+        "flow": 0.00009041,
+        "gap": 284.73,
+        "gapTarget": 284.68,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.205,
+        "mouth": 1230,
+        "p": 3.69,
+        "flow": 0.00008982,
+        "gap": 279.31,
+        "gapTarget": 279.26,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.21,
+        "mouth": 1260,
+        "p": 3.59,
+        "flow": 0.00008918,
+        "gap": 273.89,
+        "gapTarget": 273.85,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.215,
+        "mouth": 1290,
+        "p": 3.49,
+        "flow": 0.00008848,
+        "gap": 268.47,
+        "gapTarget": 268.43,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.22,
+        "mouth": 1320,
+        "p": 3.39,
+        "flow": 0.00008773,
+        "gap": 263.06,
+        "gapTarget": 263.01,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.225,
+        "mouth": 1350,
+        "p": 3.29,
+        "flow": 0.00008692,
+        "gap": 257.64,
+        "gapTarget": 257.59,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.23,
+        "mouth": 1380,
+        "p": 3.19,
+        "flow": 0.00008606,
+        "gap": 252.22,
+        "gapTarget": 252.18,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.235,
+        "mouth": 1410,
+        "p": 3.08,
+        "flow": 0.00008514,
+        "gap": 246.8,
+        "gapTarget": 246.76,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.24,
+        "mouth": 1440,
+        "p": 2.98,
+        "flow": 0.00008418,
+        "gap": 241.38,
+        "gapTarget": 241.34,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.245,
+        "mouth": 1470,
+        "p": 2.87,
+        "flow": 0.00008316,
+        "gap": 235.96,
+        "gapTarget": 235.92,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.25,
+        "mouth": 1500,
+        "p": 2.77,
+        "flow": 0.0000821,
+        "gap": 230.54,
+        "gapTarget": 230.5,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.255,
+        "mouth": 1530,
+        "p": 2.66,
+        "flow": 0.00008099,
+        "gap": 225.12,
+        "gapTarget": 225.08,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.26,
+        "mouth": 1560,
+        "p": 2.55,
+        "flow": 0.00007983,
+        "gap": 219.7,
+        "gapTarget": 219.66,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.265,
+        "mouth": 1590,
+        "p": 2.43,
+        "flow": 0.00007862,
+        "gap": 214.28,
+        "gapTarget": 214.24,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.27,
+        "mouth": 1620,
+        "p": 2.32,
+        "flow": 0.00007737,
+        "gap": 208.86,
+        "gapTarget": 208.82,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.275,
+        "mouth": 1650,
+        "p": 2.21,
+        "flow": 0.00007607,
+        "gap": 203.44,
+        "gapTarget": 203.4,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.28,
+        "mouth": 1680,
+        "p": 2.09,
+        "flow": 0.00007473,
+        "gap": 198.02,
+        "gapTarget": 197.98,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.285,
+        "mouth": 1710,
+        "p": 1.97,
+        "flow": 0.00007335,
+        "gap": 192.6,
+        "gapTarget": 192.56,
+        "audio": -0.00004
+      },
+      {
+        "t": 0.29,
+        "mouth": 1740,
+        "p": 1.85,
+        "flow": 0.00007192,
+        "gap": 187.18,
+        "gapTarget": 187.13,
+        "audio": -0.00005
+      },
+      {
+        "t": 0.295,
+        "mouth": 1770,
+        "p": 1.76,
+        "flow": 0.00007045,
+        "gap": 181.76,
+        "gapTarget": 181.72,
+        "audio": -0.00003
+      },
+      {
+        "t": 0.3,
+        "mouth": 1800,
+        "p": 1.37,
+        "flow": 0.00006893,
+        "gap": 176.3,
+        "gapTarget": 176.25,
+        "audio": -0.00016
+      },
+      {
+        "t": 0.305,
+        "mouth": 1830,
+        "p": 1.12,
+        "flow": 0.00006735,
+        "gap": 170.81,
+        "gapTarget": 170.8,
+        "audio": -0.00013
+      },
+      {
+        "t": 0.31,
+        "mouth": 1860,
+        "p": 6.58,
+        "flow": 0.00006605,
+        "gap": 166.39,
+        "gapTarget": 166.38,
+        "audio": 0.00187
+      },
+      {
+        "t": 0.315,
+        "mouth": 1890,
+        "p": -64.76,
+        "flow": 0.00006015,
+        "gap": 147.47,
+        "gapTarget": 148.02,
+        "audio": -0.02848
+      },
+      {
+        "t": 0.32,
+        "mouth": 1920,
+        "p": 388.95,
+        "flow": 0.00007604,
+        "gap": 211.11,
+        "gapTarget": 222.06,
+        "audio": 0.19183
+      },
+      {
+        "t": 0.325,
+        "mouth": 1950,
+        "p": 1177.25,
+        "flow": 0.00009786,
+        "gap": 386.02,
+        "gapTarget": 366.39,
+        "audio": 0.38168
+      },
+      {
+        "t": 0.33,
+        "mouth": 1980,
+        "p": -2052.06,
+        "flow": 8.821e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.67572
+      },
+      {
+        "t": 0.335,
+        "mouth": 2010,
+        "p": 2053.36,
+        "flow": -0.00002353,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.72211
+      },
+      {
+        "t": 0.34,
+        "mouth": 2040,
+        "p": -2086.91,
+        "flow": 8.925e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.76571
+      },
+      {
+        "t": 0.345,
+        "mouth": 2070,
+        "p": -1148.22,
+        "flow": 7.873e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.31426
+      },
+      {
+        "t": 0.35,
+        "mouth": 2100,
+        "p": 2148.42,
+        "flow": -0.00002541,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.68238
+      },
+      {
+        "t": 0.355,
+        "mouth": 2130,
+        "p": -2176.39,
+        "flow": 9.118e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.72777
+      },
+      {
+        "t": 0.36,
+        "mouth": 2160,
+        "p": 2207.35,
+        "flow": -0.00002502,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.77054
+      },
+      {
+        "t": 0.365,
+        "mouth": 2190,
+        "p": -2236.94,
+        "flow": 9.246e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80972
+      },
+      {
+        "t": 0.37,
+        "mouth": 2220,
+        "p": -2288.24,
+        "flow": 9.331e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.69059
+      },
+      {
+        "t": 0.375,
+        "mouth": 2250,
+        "p": 2297.74,
+        "flow": -0.00002516,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.73048
+      },
+      {
+        "t": 0.38,
+        "mouth": 2280,
+        "p": -2327.35,
+        "flow": 9.433e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.77256
+      },
+      {
+        "t": 0.385,
+        "mouth": 2310,
+        "p": 2357.99,
+        "flow": -0.00002526,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.81064
+      },
+      {
+        "t": 0.39,
+        "mouth": 2340,
+        "p": 1362.09,
+        "flow": 0.0001377,
+        "gap": 481.11,
+        "gapTarget": 372.28,
+        "audio": 0.37869
+      },
+      {
+        "t": 0.395,
+        "mouth": 2370,
+        "p": -2416.1,
+        "flow": 9.616e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.73034
+      },
+      {
+        "t": 0.4,
+        "mouth": 2400,
+        "p": 2448.34,
+        "flow": -0.00002538,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.77179
+      },
+      {
+        "t": 0.405,
+        "mouth": 2430,
+        "p": -2477.91,
+        "flow": 9.738e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80961
+      },
+      {
+        "t": 0.41,
+        "mouth": 2460,
+        "p": 2508.55,
+        "flow": -0.00002546,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.84286
+      },
+      {
+        "t": 0.415,
+        "mouth": 2490,
+        "p": 2526.96,
+        "flow": -0.00002099,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.7258
+      },
+      {
+        "t": 0.42,
+        "mouth": 2520,
+        "p": -2568.33,
+        "flow": 9.917e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.76904
+      },
+      {
+        "t": 0.425,
+        "mouth": 2550,
+        "p": 2598.85,
+        "flow": -0.00002557,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.80637
+      },
+      {
+        "t": 0.43,
+        "mouth": 2580,
+        "p": -2628.38,
+        "flow": 0.000001003,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.83977
+      },
+      {
+        "t": 0.435,
+        "mouth": 2610,
+        "p": 1428.11,
+        "flow": 0.000006567,
+        "gap": 20.81,
+        "gapTarget": 221.38,
+        "audio": 0.69974
+      },
+      {
+        "t": 0.44,
+        "mouth": 2640,
+        "p": 2689.92,
+        "flow": -0.00002595,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.76407
+      },
+      {
+        "t": 0.445,
+        "mouth": 2670,
+        "p": -2718.61,
+        "flow": 0.000001021,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80148
+      },
+      {
+        "t": 0.45,
+        "mouth": 2700,
+        "p": 2749.27,
+        "flow": -0.00002572,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83488
+      },
+      {
+        "t": 0.455,
+        "mouth": 2730,
+        "p": -2778.77,
+        "flow": 0.000001032,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.86397
+      },
+      {
+        "t": 0.46,
+        "mouth": 2760,
+        "p": -2870.41,
+        "flow": 0.000001043,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.76726
+      },
+      {
+        "t": 0.465,
+        "mouth": 2790,
+        "p": 2839.57,
+        "flow": -0.00002583,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.79465
+      },
+      {
+        "t": 0.47,
+        "mouth": 2820,
+        "p": -2868.97,
+        "flow": 0.000001049,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.82861
+      },
+      {
+        "t": 0.475,
+        "mouth": 2850,
+        "p": 2899.62,
+        "flow": -0.00002584,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.85814
+      },
+      {
+        "t": 0.48,
+        "mouth": 2880,
+        "p": -2929.08,
+        "flow": 0.00000106,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88321
+      },
+      {
+        "t": 0.485,
+        "mouth": 2910,
+        "p": -2974.98,
+        "flow": 0.000001067,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.78863
+      },
+      {
+        "t": 0.49,
+        "mouth": 2940,
+        "p": 2989.79,
+        "flow": -0.00002591,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.82065
+      },
+      {
+        "t": 0.495,
+        "mouth": 2970,
+        "p": -3019.24,
+        "flow": 0.000001076,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85109
+      },
+      {
+        "t": 0.5,
+        "mouth": 3000,
+        "p": 3049.9,
+        "flow": -0.00002594,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87695
+      },
+      {
+        "t": 0.505,
+        "mouth": 3000,
+        "p": -2676.85,
+        "flow": 0.0000461,
+        "gap": 65.99,
+        "gapTarget": 0,
+        "audio": -0.87273
+      },
+      {
+        "t": 0.51,
+        "mouth": 3000,
+        "p": -3057.06,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80574
+      },
+      {
+        "t": 0.515,
+        "mouth": 3000,
+        "p": 3053.65,
+        "flow": -0.00002726,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83438
+      },
+      {
+        "t": 0.52,
+        "mouth": 3000,
+        "p": -3053.2,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.86026
+      },
+      {
+        "t": 0.525,
+        "mouth": 3000,
+        "p": 3053.78,
+        "flow": -0.00002731,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.88238
+      },
+      {
+        "t": 0.53,
+        "mouth": 3000,
+        "p": 696.84,
+        "flow": 0.0001935,
+        "gap": 436.69,
+        "gapTarget": 173.36,
+        "audio": 0.0341
+      },
+      {
+        "t": 0.535,
+        "mouth": 3000,
+        "p": -3053.9,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.81283
+      },
+      {
+        "t": 0.54,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.84103
+      },
+      {
+        "t": 0.545,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.86604
+      },
+      {
+        "t": 0.55,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.88726
+      },
+      {
+        "t": 0.555,
+        "mouth": 3000,
+        "p": 3052.77,
+        "flow": -0.00002696,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.78899
+      },
+      {
+        "t": 0.56,
+        "mouth": 3000,
+        "p": -3053.39,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.82
+      },
+      {
+        "t": 0.565,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.84748
+      },
+      {
+        "t": 0.57,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.87159
+      },
+      {
+        "t": 0.575,
+        "mouth": 3000,
+        "p": 3053.72,
+        "flow": -0.00002729,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.8919
+      },
+      {
+        "t": 0.58,
+        "mouth": 3000,
+        "p": 3050.57,
+        "flow": -0.00002618,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.79651
+      },
+      {
+        "t": 0.585,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.82708
+      },
+      {
+        "t": 0.59,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.8537
+      },
+      {
+        "t": 0.595,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.87692
+      },
+      {
+        "t": 0.6,
+        "mouth": 3000,
+        "p": 2976.07,
+        "flow": 0.000004864,
+        "gap": 160.6,
+        "gapTarget": 485.58,
+        "audio": 0.89198
+      },
+      {
+        "t": 0.605,
+        "mouth": 3000,
+        "p": 3052.54,
+        "flow": -0.00002688,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.80443
+      },
+      {
+        "t": 0.61,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.83393
+      },
+      {
+        "t": 0.615,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.85972
+      },
+      {
+        "t": 0.62,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88203
+      },
+      {
+        "t": 0.625,
+        "mouth": 3000,
+        "p": -360.44,
+        "flow": 8.047e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": 0.11945
+      },
+      {
+        "t": 0.63,
+        "mouth": 3000,
+        "p": 3053.45,
+        "flow": -0.00002719,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.81201
+      },
+      {
+        "t": 0.635,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.84059
+      },
+      {
+        "t": 0.64,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.86551
+      },
+      {
+        "t": 0.645,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88693
+      },
+      {
+        "t": 0.65,
+        "mouth": 3000,
+        "p": -3152.48,
+        "flow": 0.000001091,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80235
+      },
+      {
+        "t": 0.655,
+        "mouth": 3000,
+        "p": 3053.69,
+        "flow": -0.00002728,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.81931
+      },
+      {
+        "t": 0.66,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.84704
+      },
+      {
+        "t": 0.665,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87108
+      },
+      {
+        "t": 0.67,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.89159
+      },
+      {
+        "t": 0.675,
+        "mouth": 3000,
+        "p": -3068.1,
+        "flow": 0.000001083,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.79843
+      },
+      {
+        "t": 0.68,
+        "mouth": 3000,
+        "p": 3053.75,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.82641
+      },
+      {
+        "t": 0.685,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85327
+      },
+      {
+        "t": 0.69,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87643
+      },
+      {
+        "t": 0.695,
+        "mouth": 3000,
+        "p": -2890.24,
+        "flow": 0.00001499,
+        "gap": 21.07,
+        "gapTarget": 0,
+        "audio": -0.88653
+      },
+      {
+        "t": 0.7,
+        "mouth": 3000,
+        "p": -3054.69,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80426
+      },
+      {
+        "t": 0.705,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83329
+      },
+      {
+        "t": 0.71,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85931
+      },
+      {
+        "t": 0.715,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.88156
+      },
+      {
+        "t": 0.72,
+        "mouth": 3000,
+        "p": -36.17,
+        "flow": 0.0001983,
+        "gap": 389.04,
+        "gapTarget": 43.83,
+        "audio": -0.28985
+      },
+      {
+        "t": 0.725,
+        "mouth": 3000,
+        "p": -3053.23,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.81153
+      },
+      {
+        "t": 0.73,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83998
+      },
+      {
+        "t": 0.735,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.8651
+      },
+      {
+        "t": 0.74,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.88647
+      },
+      {
+        "t": 0.745,
+        "mouth": 3000,
+        "p": 2968.96,
+        "flow": 0.00001846,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.77513
+      },
+      {
+        "t": 0.75,
+        "mouth": 3000,
+        "p": -3053.21,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.81882
+      },
+      {
+        "t": 0.755,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.84644
+      },
+      {
+        "t": 0.76,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.87071
+      },
+      {
+        "t": 0.765,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.89116
+      },
+      {
+        "t": 0.77,
+        "mouth": 3000,
+        "p": 3042.2,
+        "flow": -0.00002308,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.79406
+      },
+      {
+        "t": 0.775,
+        "mouth": 3000,
+        "p": -3053.27,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.82592
+      },
+      {
+        "t": 0.78,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.8527
+      },
+      {
+        "t": 0.785,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.87606
+      },
+      {
+        "t": 0.79,
+        "mouth": 3000,
+        "p": 2994.44,
+        "flow": 0.000001979,
+        "gap": 228.43,
+        "gapTarget": 496.89,
+        "audio": 0.8923
+      },
+      {
+        "t": 0.795,
+        "mouth": 3000,
+        "p": 3051.68,
+        "flow": -0.00002657,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.80308
+      },
+      {
+        "t": 0.8,
+        "mouth": 3000,
+        "p": -3053.3,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.83281
+      },
+      {
+        "t": 0.805,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.85874
+      },
+      {
+        "t": 0.81,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88122
+      },
+      {
+        "t": 0.815,
+        "mouth": 3000,
+        "p": 478.76,
+        "flow": 6.96e-7,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": 0.45973
+      },
+      {
+        "t": 0.82,
+        "mouth": 3000,
+        "p": 3053.4,
+        "flow": -0.00002717,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.8108
+      },
+      {
+        "t": 0.825,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.83952
+      },
+      {
+        "t": 0.83,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.86457
+      },
+      {
+        "t": 0.835,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88614
+      },
+      {
+        "t": 0.84,
+        "mouth": 3000,
+        "p": -3068.51,
+        "flow": 0.000001083,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.78943
+      },
+      {
+        "t": 0.845,
+        "mouth": 3000,
+        "p": 3053.71,
+        "flow": -0.00002728,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.81815
+      },
+      {
+        "t": 0.85,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.84599
+      },
+      {
+        "t": 0.855,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87019
+      },
+      {
+        "t": 0.86,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.89084
+      },
+      {
+        "t": 0.865,
+        "mouth": 3000,
+        "p": -3044.38,
+        "flow": 0.000001081,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.79389
+      },
+      {
+        "t": 0.87,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.82526
+      },
+      {
+        "t": 0.875,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85228
+      },
+      {
+        "t": 0.88,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87557
+      },
+      {
+        "t": 0.885,
+        "mouth": 3000,
+        "p": -2996.98,
+        "flow": 0.000001077,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.89216
+      },
+      {
+        "t": 0.89,
+        "mouth": 3000,
+        "p": -3049.4,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.8023
+      },
+      {
+        "t": 0.895,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83218
+      },
+      {
+        "t": 0.9,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85833
+      },
+      {
+        "t": 0.905,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.88075
+      },
+      {
+        "t": 0.91,
+        "mouth": 3000,
+        "p": -744.26,
+        "flow": 0.0001858,
+        "gap": 328.03,
+        "gapTarget": 0,
+        "audio": -0.54551
+      },
+      {
+        "t": 0.915,
+        "mouth": 3000,
+        "p": -3052.18,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.81018
+      },
+      {
+        "t": 0.92,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83889
+      },
+      {
+        "t": 0.925,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.86418
+      },
+      {
+        "t": 0.93,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.88569
+      },
+      {
+        "t": 0.935,
+        "mouth": 3000,
+        "p": 2789.08,
+        "flow": 0.0000631,
+        "gap": 499.53,
+        "gapTarget": 486.15,
+        "audio": 0.74377
+      },
+      {
+        "t": 0.94,
+        "mouth": 3000,
+        "p": -3053.04,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.81763
+      },
+      {
+        "t": 0.945,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.84539
+      },
+      {
+        "t": 0.95,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.8698
+      },
+      {
+        "t": 0.955,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.89041
+      },
+      {
+        "t": 0.96,
+        "mouth": 3000,
+        "p": 3042.93,
+        "flow": -0.00002336,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.79291
+      },
+      {
+        "t": 0.965,
+        "mouth": 3000,
+        "p": -3053.25,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.82476
+      },
+      {
+        "t": 0.97,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.8517
+      },
+      {
+        "t": 0.975,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.8752
+      },
+      {
+        "t": 0.98,
+        "mouth": 3000,
+        "p": 3010,
+        "flow": -0.000004361,
+        "gap": 296.59,
+        "gapTarget": 499.88,
+        "audio": 0.89245
+      },
+      {
+        "t": 0.985,
+        "mouth": 3000,
+        "p": 3052.59,
+        "flow": -0.00002689,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.80196
+      },
+      {
+        "t": 0.99,
+        "mouth": 3000,
+        "p": -3053.3,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.83172
+      },
+      {
+        "t": 0.995,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.85777
+      },
+      {
+        "t": 1,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88039
+      },
+      {
+        "t": 1.005,
+        "mouth": 3000,
+        "p": 1269.11,
+        "flow": 0.000001206,
+        "gap": 3.15,
+        "gapTarget": 93.67,
+        "audio": 0.68356
+      },
+      {
+        "t": 1.01,
+        "mouth": 3000,
+        "p": 3053.73,
+        "flow": -0.00002729,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.80963
+      },
+      {
+        "t": 1.015,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.83843
+      },
+      {
+        "t": 1.02,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.86365
+      },
+      {
+        "t": 1.025,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.88534
+      },
+      {
+        "t": 1.03,
+        "mouth": 3000,
+        "p": -2848.71,
+        "flow": 0.000001064,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.75349
+      },
+      {
+        "t": 1.035,
+        "mouth": 3000,
+        "p": 3053.8,
+        "flow": -0.00002731,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.81697
+      },
+      {
+        "t": 1.04,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.84496
+      },
+      {
+        "t": 1.045,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.86928
+      },
+      {
+        "t": 1.05,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.8901
+      },
+      {
+        "t": 1.055,
+        "mouth": 3000,
+        "p": -3014.73,
+        "flow": 0.000001079,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.78839
+      },
+      {
+        "t": 1.06,
+        "mouth": 3000,
+        "p": 3053.78,
+        "flow": -0.00002731,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.82411
+      },
+      {
+        "t": 1.065,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85126
+      },
+      {
+        "t": 1.07,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87471
+      },
+      {
+        "t": 1.075,
+        "mouth": 3000,
+        "p": -3018.54,
+        "flow": 0.000001079,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.89265
+      },
+      {
+        "t": 1.08,
+        "mouth": 3000,
+        "p": -3045.25,
+        "flow": 0.000001081,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.80049
+      },
+      {
+        "t": 1.085,
+        "mouth": 3000,
+        "p": 3053.77,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.83107
+      },
+      {
+        "t": 1.09,
+        "mouth": 3000,
+        "p": -3053.31,
+        "flow": 0.000001082,
+        "gap": 0,
+        "gapTarget": 0,
+        "audio": -0.85735
+      },
+      {
+        "t": 1.095,
+        "mouth": 3000,
+        "p": 3053.76,
+        "flow": -0.0000273,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.87991
+      },
+      {
+        "t": 1.1,
+        "mouth": 950,
+        "p": -1630.39,
+        "flow": 0.0001308,
+        "gap": 278.58,
+        "gapTarget": 106.44,
+        "audio": -0.75332
+      },
+      {
+        "t": 1.105,
+        "mouth": 950,
+        "p": -497.36,
+        "flow": 0.00008389,
+        "gap": 239.67,
+        "gapTarget": 239.5,
+        "audio": -0.24271
+      },
+      {
+        "t": 1.11,
+        "mouth": 950,
+        "p": 424.73,
+        "flow": 0.00008401,
+        "gap": 405.48,
+        "gapTarget": 405.46,
+        "audio": 0.16364
+      },
+      {
+        "t": 1.115,
+        "mouth": 950,
+        "p": -348.82,
+        "flow": 0.00008813,
+        "gap": 266.1,
+        "gapTarget": 266.16,
+        "audio": -0.17275
+      },
+      {
+        "t": 1.12,
+        "mouth": 950,
+        "p": 313.35,
+        "flow": 0.00008533,
+        "gap": 372.31,
+        "gapTarget": 383.35,
+        "audio": 0.16178
+      },
+      {
+        "t": 1.125,
+        "mouth": 950,
+        "p": 277.43,
+        "flow": 0.00009011,
+        "gap": 382.05,
+        "gapTarget": 379.63,
+        "audio": 0.1003
+      },
+      {
+        "t": 1.13,
+        "mouth": 950,
+        "p": -269,
+        "flow": 0.00008992,
+        "gap": 280.47,
+        "gapTarget": 280.57,
+        "audio": -0.11448
+      },
+      {
+        "t": 1.135,
+        "mouth": 950,
+        "p": 249.89,
+        "flow": 0.00009013,
+        "gap": 374.22,
+        "gapTarget": 374.03,
+        "audio": 0.11288
+      },
+      {
+        "t": 1.14,
+        "mouth": 950,
+        "p": -248.61,
+        "flow": 0.00009139,
+        "gap": 287.51,
+        "gapTarget": 284.85,
+        "audio": -0.12863
+      },
+      {
+        "t": 1.145,
+        "mouth": 950,
+        "p": -109.96,
+        "flow": 0.00009011,
+        "gap": 301.96,
+        "gapTarget": 307.84,
+        "audio": -0.03399
+      },
+      {
+        "t": 1.15,
+        "mouth": 950,
+        "p": 209.77,
+        "flow": 0.00009098,
+        "gap": 366.99,
+        "gapTarget": 366.8,
+        "audio": 0.08297
+      },
+      {
+        "t": 1.155,
+        "mouth": 950,
+        "p": -182.56,
+        "flow": 0.00009143,
+        "gap": 296.12,
+        "gapTarget": 296.12,
+        "audio": -0.08371
+      },
+      {
+        "t": 1.16,
+        "mouth": 950,
+        "p": 212.54,
+        "flow": 0.00009088,
+        "gap": 367.26,
+        "gapTarget": 367.21,
+        "audio": 0.10204
+      },
+      {
+        "t": 1.165,
+        "mouth": 950,
+        "p": 2.31,
+        "flow": 0.0000949,
+        "gap": 336.87,
+        "gapTarget": 330.73,
+        "audio": -0.01526
+      },
+      {
+        "t": 1.17,
+        "mouth": 950,
+        "p": -148.6,
+        "flow": 0.0000916,
+        "gap": 301.34,
+        "gapTarget": 302.07,
+        "audio": -0.05961
+      },
+      {
+        "t": 1.175,
+        "mouth": 950,
+        "p": 154.22,
+        "flow": 0.00009179,
+        "gap": 356.61,
+        "gapTarget": 356.74,
+        "audio": 0.06475
+      },
+      {
+        "t": 1.18,
+        "mouth": 950,
+        "p": -160.78,
+        "flow": 0.00009148,
+        "gap": 299.24,
+        "gapTarget": 299.95,
+        "audio": -0.0789
+      },
+      {
+        "t": 1.185,
+        "mouth": 950,
+        "p": 74.5,
+        "flow": 0.00009113,
+        "gap": 336.97,
+        "gapTarget": 341.47,
+        "audio": 0.04227
+      },
+      {
+        "t": 1.19,
+        "mouth": 950,
+        "p": 106.17,
+        "flow": 0.0000929,
+        "gap": 350.11,
+        "gapTarget": 348.49,
+        "audio": 0.03669
+      },
+      {
+        "t": 1.195,
+        "mouth": 950,
+        "p": -117.46,
+        "flow": 0.00009224,
+        "gap": 307.97,
+        "gapTarget": 307.87,
+        "audio": -0.05111
+      },
+      {
+        "t": 1.2,
+        "mouth": 950,
+        "p": 134.81,
+        "flow": 0.00009231,
+        "gap": 354.15,
+        "gapTarget": 353.4,
+        "audio": 0.06033
+      },
+      {
+        "t": 1.205,
+        "mouth": 950,
+        "p": -93.17,
+        "flow": 0.00009331,
+        "gap": 315.26,
+        "gapTarget": 312.76,
+        "audio": -0.05161
+      },
+      {
+        "t": 1.21,
+        "mouth": 950,
+        "p": -46.18,
+        "flow": 0.00009189,
+        "gap": 317.88,
+        "gapTarget": 320.17,
+        "audio": -0.01456
+      },
+      {
+        "t": 1.215,
+        "mouth": 950,
+        "p": 103.05,
+        "flow": 0.00009243,
+        "gap": 347.68,
+        "gapTarget": 347.58,
+        "audio": 0.0398
+      },
+      {
+        "t": 1.22,
+        "mouth": 950,
+        "p": -98.69,
+        "flow": 0.00009218,
+        "gap": 310.59,
+        "gapTarget": 311.13,
+        "audio": -0.04634
+      },
+      {
+        "t": 1.225,
+        "mouth": 950,
+        "p": 106.2,
+        "flow": 0.00009203,
+        "gap": 346.84,
+        "gapTarget": 347.89,
+        "audio": 0.05067
+      },
+      {
+        "t": 1.23,
+        "mouth": 950,
+        "p": 10.36,
+        "flow": 0.00009363,
+        "gap": 333.81,
+        "gapTarget": 331.39,
+        "audio": -0.00452
+      },
+      {
+        "t": 1.235,
+        "mouth": 950,
+        "p": -70.64,
+        "flow": 0.00009241,
+        "gap": 315.74,
+        "gapTarget": 316.18,
+        "audio": -0.02901
+      },
+      {
+        "t": 1.24,
+        "mouth": 950,
+        "p": 87.08,
+        "flow": 0.00009262,
+        "gap": 345.07,
+        "gapTarget": 344.74,
+        "audio": 0.03579
+      },
+      {
+        "t": 1.245,
+        "mouth": 950,
+        "p": -87.52,
+        "flow": 0.00009254,
+        "gap": 313.52,
+        "gapTarget": 313.3,
+        "audio": -0.04422
+      },
+      {
+        "t": 1.25,
+        "mouth": 950,
+        "p": 31.24,
+        "flow": 0.00009209,
+        "gap": 332.13,
+        "gapTarget": 334.18,
+        "audio": 0.01775
+      },
+      {
+        "t": 1.255,
+        "mouth": 950,
+        "p": 55.26,
+        "flow": 0.00009297,
+        "gap": 339.95,
+        "gapTarget": 339.14,
+        "audio": 0.01802
+      },
+      {
+        "t": 1.26,
+        "mouth": 950,
+        "p": -61.83,
+        "flow": 0.00009255,
+        "gap": 317.61,
+        "gapTarget": 317.82,
+        "audio": -0.02775
+      },
+      {
+        "t": 1.265,
+        "mouth": 950,
+        "p": 82.42,
+        "flow": 0.00009261,
+        "gap": 344.05,
+        "gapTarget": 343.87,
+        "audio": 0.03623
+      },
+      {
+        "t": 1.27,
+        "mouth": 950,
+        "p": -40.78,
+        "flow": 0.00009321,
+        "gap": 323.38,
+        "gapTarget": 321.97,
+        "audio": -0.02467
+      },
+      {
+        "t": 1.275,
+        "mouth": 950,
+        "p": -22.04,
+        "flow": 0.0000924,
+        "gap": 323.71,
+        "gapTarget": 324.79,
+        "audio": -0.00749
+      },
+      {
+        "t": 1.28,
+        "mouth": 950,
+        "p": 56.95,
+        "flow": 0.00009276,
+        "gap": 339.52,
+        "gapTarget": 339.3,
+        "audio": 0.02103
+      },
+      {
+        "t": 1.285,
+        "mouth": 950,
+        "p": -58.78,
+        "flow": 0.00009253,
+        "gap": 318.06,
+        "gapTarget": 318.36,
+        "audio": -0.02853
+      },
+      {
+        "t": 1.29,
+        "mouth": 950,
+        "p": 57.05,
+        "flow": 0.00009242,
+        "gap": 338.29,
+        "gapTarget": 339.09,
+        "audio": 0.02653
+      },
+      {
+        "t": 1.295,
+        "mouth": 950,
+        "p": 9.5,
+        "flow": 0.0000932,
+        "gap": 332.11,
+        "gapTarget": 330.96,
+        "audio": -0.00168
+      },
+      {
+        "t": 1.3,
+        "mouth": 950,
+        "p": -34.72,
+        "flow": 0.00009263,
+        "gap": 322.37,
+        "gapTarget": 322.68,
+        "audio": -0.01493
+      },
+      {
+        "t": 1.305,
+        "mouth": 950,
+        "p": 54.85,
+        "flow": 0.0000928,
+        "gap": 339.23,
+        "gapTarget": 338.93,
+        "audio": 0.0219
+      },
+      {
+        "t": 1.31,
+        "mouth": 950,
+        "p": -46.89,
+        "flow": 0.00009281,
+        "gap": 320.98,
+        "gapTarget": 320.64,
+        "audio": -0.02487
+      },
+      {
+        "t": 1.315,
+        "mouth": 950,
+        "p": 16.27,
+        "flow": 0.00009245,
+        "gap": 330.68,
+        "gapTarget": 331.7,
+        "audio": 0.00849
+      },
+      {
+        "t": 1.32,
+        "mouth": 950,
+        "p": 30.82,
+        "flow": 0.00009293,
+        "gap": 335.08,
+        "gapTarget": 334.65,
+        "audio": 0.00911
+      },
+      {
+        "t": 1.325,
+        "mouth": 950,
+        "p": -34.79,
+        "flow": 0.00009265,
+        "gap": 322.43,
+        "gapTarget": 322.68,
+        "audio": -0.01647
+      },
+      {
+        "t": 1.33,
+        "mouth": 950,
+        "p": 50.47,
+        "flow": 0.0000927,
+        "gap": 338.03,
+        "gapTarget": 338.07,
+        "audio": 0.02145
+      },
+      {
+        "t": 1.335,
+        "mouth": 950,
+        "p": -17.98,
+        "flow": 0.00009305,
+        "gap": 326.72,
+        "gapTarget": 325.93,
+        "audio": -0.01258
+      },
+      {
+        "t": 1.34,
+        "mouth": 950,
+        "p": -9.39,
+        "flow": 0.00009261,
+        "gap": 326.65,
+        "gapTarget": 327.19,
+        "audio": -0.00374
+      },
+      {
+        "t": 1.345,
+        "mouth": 950,
+        "p": 34.44,
+        "flow": 0.00009285,
+        "gap": 335.48,
+        "gapTarget": 335.25,
+        "audio": 0.01196
+      },
+      {
+        "t": 1.35,
+        "mouth": 0,
+        "p": -299.36,
+        "flow": 0.00005169,
+        "gap": 337.1,
+        "gapTarget": 445.13,
+        "audio": -0.13707
+      },
+      {
+        "t": 1.355,
+        "mouth": 0,
+        "p": -16.59,
+        "flow": 0.00001123,
+        "gap": 497.02,
+        "gapTarget": 497.01,
+        "audio": 0.01324
+      },
+      {
+        "t": 1.36,
+        "mouth": 0,
+        "p": -4.35,
+        "flow": 0.000003443,
+        "gap": 499.22,
+        "gapTarget": 499.22,
+        "audio": 0.0064
+      },
+      {
+        "t": 1.365,
+        "mouth": 0,
+        "p": -1.3,
+        "flow": 0.00000108,
+        "gap": 499.77,
+        "gapTarget": 499.77,
+        "audio": 0.00261
+      },
+      {
+        "t": 1.37,
+        "mouth": 0,
+        "p": -0.4,
+        "flow": 3.356e-7,
+        "gap": 499.93,
+        "gapTarget": 499.93,
+        "audio": 0.001
+      },
+      {
+        "t": 1.375,
+        "mouth": 0,
+        "p": -0.13,
+        "flow": 1.092e-7,
+        "gap": 499.98,
+        "gapTarget": 499.98,
+        "audio": 0.00037
+      },
+      {
+        "t": 1.38,
+        "mouth": 0,
+        "p": -0.06,
+        "flow": 5.038e-8,
+        "gap": 499.99,
+        "gapTarget": 499.99,
+        "audio": 0.00013
+      },
+      {
+        "t": 1.385,
+        "mouth": 0,
+        "p": -0.02,
+        "flow": 1.572e-8,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.00005
+      },
+      {
+        "t": 1.39,
+        "mouth": 0,
+        "p": -0.01,
+        "flow": 4.947e-9,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.00002
+      },
+      {
+        "t": 1.395,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.556e-9,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0.00001
+      },
+      {
+        "t": 1.4,
+        "mouth": 0,
+        "p": 0,
+        "flow": 4.896e-10,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.405,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.639e-10,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.41,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.332e-11,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.415,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.314e-11,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.42,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.28e-12,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.425,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.291e-12,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.43,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.179e-13,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.435,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.287e-13,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.44,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.08e-13,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.445,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.407e-14,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.45,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.072e-14,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.455,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.375e-15,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.46,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.057e-15,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.465,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.63e-16,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.47,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.592e-16,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.475,
+        "mouth": 0,
+        "p": 0,
+        "flow": 5.016e-17,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.48,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.577e-17,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.485,
+        "mouth": 0,
+        "p": 0,
+        "flow": 4.972e-18,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.49,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.576e-18,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.495,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.759e-19,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.5,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.344e-19,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.505,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.383e-20,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.51,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.321e-20,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.515,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.32e-21,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.52,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.381e-21,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.525,
+        "mouth": 0,
+        "p": 0,
+        "flow": 9.393e-22,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.53,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.452e-22,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.535,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.087e-22,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.54,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.418e-23,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.545,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.076e-23,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.55,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.555e-24,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.555,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.604e-24,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.56,
+        "mouth": 0,
+        "p": 0,
+        "flow": 5.084e-25,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.565,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.599e-25,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.57,
+        "mouth": 0,
+        "p": 0,
+        "flow": 5.033e-26,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.575,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.579e-26,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.58,
+        "mouth": 0,
+        "p": 0,
+        "flow": 4.945e-27,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.585,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.374e-27,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.59,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.484e-28,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.595,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.354e-28,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.6,
+        "mouth": 0,
+        "p": 0,
+        "flow": 7.413e-29,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.605,
+        "mouth": 0,
+        "p": 0,
+        "flow": 2.326e-29,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.61,
+        "mouth": 0,
+        "p": 0,
+        "flow": 6.163e-30,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.615,
+        "mouth": 0,
+        "p": 0,
+        "flow": 3.496e-30,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.62,
+        "mouth": 0,
+        "p": 0,
+        "flow": 1.102e-30,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.625,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.63,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.635,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.64,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.645,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.65,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.655,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.66,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.665,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.67,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.675,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.68,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.685,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.69,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.695,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.7,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.705,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.71,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.715,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.72,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.725,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.73,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.735,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.74,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.745,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.75,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.755,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.76,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.765,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.77,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.775,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.78,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.785,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.79,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.795,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.8,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.805,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.81,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.815,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.82,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.825,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.83,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.835,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.84,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.845,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.85,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.855,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.86,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.865,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.87,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.875,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.88,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.885,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.89,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      },
+      {
+        "t": 1.895,
+        "mouth": 0,
+        "p": 0,
+        "flow": 0,
+        "gap": 500,
+        "gapTarget": 500,
+        "audio": 0
+      }
+    ]
+  }
+}
