@@ -25,6 +25,10 @@ class ReedBoreProcessor extends AudioWorkletProcessor {
     this.meterPeak = 0;
     this.meterPressure = 0;
     this.meterFlow = 0;
+    this.meterFlowPeak = 0;
+    this.meterFlowSum = 0;
+    this.meterFlowMin = 0;
+    this.meterFrames = 0;
     this.lastFaultSent = null;
     this.lastClampKey = null;
 

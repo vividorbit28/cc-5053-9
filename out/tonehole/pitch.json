@@ -1,0 +1,97 @@
+{
+  "description": "ToneholeBore single-active-junction pitch at 2500 Pa, 2x oversampling",
+  "fs": 48000,
+  "rows": [
+    {
+      "openCount": 0,
+      "mouthPa": 2500,
+      "measuredHz": 278.31,
+      "predictedHz": 279.17,
+      "centsError": -5.33,
+      "rmsPa": 2477,
+      "register": "low",
+      "fault": null
+    },
+    {
+      "openCount": 1,
+      "mouthPa": 2500,
+      "measuredHz": 294.57,
+      "predictedHz": 296.14,
+      "centsError": -9.15,
+      "rmsPa": 2394,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 2,
+      "mouthPa": 2500,
+      "measuredHz": 311.81,
+      "predictedHz": 313.33,
+      "centsError": -8.43,
+      "rmsPa": 2378,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 3,
+      "mouthPa": 2500,
+      "measuredHz": 330.2,
+      "predictedHz": 331.5,
+      "centsError": -6.83,
+      "rmsPa": 2370,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 4,
+      "mouthPa": 2500,
+      "measuredHz": 349.07,
+      "predictedHz": 350.7,
+      "centsError": -8.08,
+      "rmsPa": 2363,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 5,
+      "mouthPa": 2500,
+      "measuredHz": 369.3,
+      "predictedHz": 370.98,
+      "centsError": -7.84,
+      "rmsPa": 2357,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 6,
+      "mouthPa": 2500,
+      "measuredHz": 390.34,
+      "predictedHz": 392.39,
+      "centsError": -9.08,
+      "rmsPa": 2353,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 7,
+      "mouthPa": 2500,
+      "measuredHz": 413.07,
+      "predictedHz": 415,
+      "centsError": -8.07,
+      "rmsPa": 2344,
+      "register": "high",
+      "fault": null
+    },
+    {
+      "openCount": 8,
+      "mouthPa": 2500,
+      "measuredHz": 436.8,
+      "predictedHz": 438.87,
+      "centsError": -8.2,
+      "rmsPa": 2339,
+      "register": "high",
+      "fault": null
+    }
+  ],
+  "maxAbsCents": 9.15
+}

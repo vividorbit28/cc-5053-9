@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Single-reed / digital-waveguide blown instrument with offline measurement lab",
+  "description": "Single-reed / digital-waveguide blown instrument with a physical tone-hole engine and offline measurement lab",
   "scripts": {
     "start": "node server.js",
     "test": "node --test tests/*.test.js",
-    "offline": "node scripts/offline-measure.js"
+    "offline": "node scripts/offline-measure.js",
+    "offline:tonehole": "node scripts/tonehole-measure.js"
   },
   "engines": {
     "node": ">=18"

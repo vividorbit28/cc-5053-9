@@ -7,20 +7,31 @@ recorded long tone anywhere in the path.
 
 - `src/core/reed-bore.js` — the model. Used verbatim by the browser worklet,
   by the offline scripts, and by the tests.
+- `src/core/tonehole-bore.js` — a second, *bidirectional* engine in which an
+  open hole is a real shunt-scattering junction rather than a delay shortcut.
+- `src/core/performance.js` — recording/reverse replay and the parallel
+  history-vs-restart acoustic states used by the tone-hole lab.
 - `src/core/analysis.js` — FFT, pitch estimators, envelope, decay fit, delay
   budget. Also shared.
 - `src/worklet/reed-bore-worklet.js` — AudioWorklet host. The realtime sound.
+- `src/worklet/tonehole-bore-worklet.js` — AudioWorklet host for the physical
+  tone-hole engine.
 - `public/` — playing panel + measurement lab.
 - `scripts/offline-measure.js` — renders WAV/JSON with the same core.
+- `scripts/tonehole-measure.js` — tone-hole pitch, register hysteresis,
+  parallel-state and close-restore measurements.
 - `out/` — committed measurement output (`npm run offline`).
 - `tests/core.test.js` — physics and numerical-behaviour tests.
+- `tests/tonehole-bore.test.js`, `tests/performance.test.js` — tone-hole
+  engine and performance-layer tests.
 
 ## Run it
 
 ```bash
-npm start            # static server -> http://localhost:8080/
-npm test             # core tests (node --test)
-npm run offline      # regenerate out/measurements.json and the WAVs
+npm start                  # static server -> http://localhost:8080/
+npm test                   # core, tone-hole and performance tests (node --test)
+npm run offline            # regenerate out/measurements.json and the WAVs
+npm run offline:tonehole   # regenerate out/tonehole/ (pitch, hysteresis, parallel states)
 ```
 
 No dependencies are required; Node ≥ 18. Use Chrome/Edge/Firefox/Safari with
@@ -108,6 +119,92 @@ Parameters live in `DEFAULT_CONFIG` in `src/core/reed-bore.js`, all in SI.
 Reed: rest gap 0.5 mm, static compliance 0.18 µm/Pa, reed resonance 2.8 kHz,
 damping ratio 0.5, discharge coefficient 0.6. Bore: 4.5 mm radius, 300 mm
 closed length, 8 tone holes, c = 343 m/s, 2× oversampling.
+
+## Physical tone-hole engine (`ToneholeBore`)
+
+`ReedBore` stores one forward wave and models a fingering by shortening its
+delay. `ToneholeBore` models what an open hole physically does: a shunt
+admittance at a fixed spatial position that reflects part of the outgoing wave
+back to the reed and transmits the rest toward the bell.
+
+### Single-active-junction topology
+
+A well-vented woodwind is dominated by its most mouth-ward open hole; the holes
+beyond it only fix where that junction sits. So exactly **one** junction
+scatters, splitting the guide into two physical segments:
+
+- segment A = reed ↔ active hole, the speaking reflector (a pair of one-way
+  delay lines `rA`/`lA`);
+- segment B = active hole ↔ bell, the transmitted tail (`rB`/`lB`).
+
+With all holes closed there is no junction; `rA`/`lA` span reed ↔ bell and the
+bell terminates the loop. Either way the speaking round trip is the two one-way
+lines, `2·delayA`. The pressure junction with normalised shunt admittance
+`gh·Z0` is
+
+```
+pJ    = 2 (r+ + l-) / (2 + gh)
+r+out = pJ - l-          (toward the bell)
+l-out = pJ - r+          (back to the reed)
+```
+
+A well-vented open hole behaves almost like a pressure-release termination;
+`holeGamma = 25` gives a junction reflection `gamma/(2+gamma) ≈ 0.93` and lands
+the pitch within a few cents of the geometric quarter-wave target.
+
+Every substep reads all arriving waves before any buffer is pushed
+(read-then-write, the same ordering as `ReedBore`), so a segment returns the
+value pushed exactly `delay` substeps earlier. Each line carries the geometric
+one-way time with the reed/lowpass phase trims split half into each direction.
+All four buffers are sized for the largest one-way target so a retuned segment
+can never alias its circular read index. The same implicit reed valve and
+output stage as `ReedBore` are reused, so the two engines are level-matched.
+
+Measured at 2500 Pa (`out/tonehole/pitch.json`), all nine fingerings sound
+within **−5.3 … −9.2 cents** of `c/(4L_eff)` with no numerical faults.
+
+### How the requirements are met
+
+- **R1 — fingering changes the reflection/propagation conditions.** Opening a
+  hole inserts a real shunt junction and moves it geometrically; it is not a
+  delay-length edit. The delay lines are retuned in place (only the read head
+  moves, never the buffer) and the admittance glides over ~8 ms, so the wave
+  already in the bore is retained and re-scattered at the new junction.
+- **R2 — register return-threshold hysteresis at constant pressure.** Two
+  coupled Van der Pol modes (low and the 3rd eigenmode) compete; mouth pressure
+  drives their growth and hole openness tilts which wins. They are an
+  observation layer — they label the register but never alter the bore wave. At
+  constant pressure the up-switch occurs near openness 0.525 and the down-switch
+  near 0.225–0.25, a hysteresis width of ~0.28–0.30
+  (`out/tonehole/hysteresis.json`). The same fingering therefore returns on a
+  different threshold than it left.
+- **R3 — continuous boundary control and two parallel acoustic states.**
+  `setHoleOpenness(index, value)` sweeps a shunt admittance continuously, and
+  `ParallelStates` runs two engines on identical input that differ only in
+  whether the stored bore wave is kept. Fingering changes never reset the
+  engine: `setDelay` plus the admittance glide preserve the in-bore waveform.
+- **R4 — record and reverse-fingering replay.** `PerformanceRecorder` samples
+  breath pressure, fingering and the model's *measured* audio frequency, then
+  replays. Reverse replay keeps the pressure/timing order and plays the
+  fingering sequence backwards.
+- **R5 — brief close-restore acceptance.** `runCloseRestore` holds an open-hole
+  note, briefly closes the holes and restores them with no reset. The vibration
+  never stops (minimum RMS during the close stays above ~2400 Pa vs a sub-50 Pa
+  noise floor) and the note returns at the same pitch
+  (`out/tonehole/close-restore.json`); the register layer can still transition
+  on the openness history.
+- **R6 — restart vs history after a near-silent transition.** With the
+  fingering fixed, the breath dips to a near-silent level then recovers. The
+  history engine keeps its in-bore wave; the restart engine is cleared at the
+  dip and regrows from the seed. They are bit-identical in steady state and
+  separate only in the recovery transient.
+- **R7 — the shortest distinguishing fragment is built in.** A dip **shorter
+  than the ~100 ms bore decay** leaves residual energy only in the history
+  engine. A 10 ms dip already gives a ~234 Pa peak separation (a 4 ms dip gives
+  ~720 Pa); dips past ~50 ms let both bores empty and the distinction vanishes
+  (`out/tonehole/parallel.json`, with `fragment-history.wav` /
+  `fragment-restart.wav`). Run it from the tone-hole lab's "Run distinguishing
+  fragment" button.
 
 ## What it does and does not model
 
@@ -210,8 +307,9 @@ changes, i.e. a real model behaviour; it is reported, not compensated.
 ## Reproducing
 
 ```bash
-npm test                 # 12 tests, no browser required
-npm run offline          # regenerate out/, prints the summary table
+npm test                 # 23 tests, no browser required
+npm run offline          # ReedBore measurements + WAVs
+npm run offline:tonehole # ToneholeBore pitch/hysteresis/parallel-state output
 npm start                # then open http://localhost:8080/
 ```
 

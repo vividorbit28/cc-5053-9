@@ -116,6 +116,65 @@
         from the loop; no oscillator is mixed in.</p>
     </section>
 
+    <section class="panel perf">
+      <h2>Tone-hole performance lab <span class="tag">physical junctions</span></h2>
+      <p class="hint">Runs the bidirectional <code>ToneholeBore</code>: open holes are real
+        shunt-scattering junctions that change the bore's reflection conditions, and the delay
+        lines keep the in-bore waveform across fingering changes. All rendering below is offline in
+        this tab using the same core as the tests.</p>
+
+      <div class="buttons">
+        <button id="th-start" type="button" class="primary">Start tone-hole audio</button>
+        <button id="th-stop" type="button">Stop tone-hole audio</button>
+        <label class="inline" for="th-blow">breath
+          <input id="th-blow" type="range" min="0" max="3200" step="25" value="2500">
+          <output id="th-blow-val">2500 Pa</output>
+        </label>
+        <label class="inline" for="th-finger">open holes
+          <input id="th-finger" type="range" min="0" max="8" step="1" value="2">
+          <output id="th-finger-val">2</output>
+        </label>
+      </div>
+      <div id="th-status" class="hint lab-status">not started</div>
+
+      <h3>Record &amp; reverse-fingering replay (R4)</h3>
+      <div class="buttons">
+        <button id="perf-record" type="button">Record phrase</button>
+        <button id="perf-replay" type="button">Replay as recorded</button>
+        <button id="perf-replay-reverse" type="button">Replay with fingering reversed</button>
+      </div>
+      <p class="hint">Records breath pressure, fingering and the model's measured frequency, then
+        replays. Reversing keeps the pressure/timing order and plays the fingering sequence
+        backwards.</p>
+      <div id="perf-record-out" class="mini-table"></div>
+
+      <h3>History vs from-scratch restart (R3, R6, R7)</h3>
+      <div class="buttons">
+        <button id="frag-run" type="button">Run distinguishing fragment</button>
+        <label class="inline" for="frag-dip">dip
+          <input id="frag-dip" type="range" min="4" max="50" step="1" value="10">
+          <output id="frag-dip-val">10 ms</output>
+        </label>
+      </div>
+      <p class="hint">Two engines get the identical pressure-only dip. One keeps the wave in the
+        bore; the other is cleared at the dip and restarts from the seed. A dip shorter than the
+        ~100 ms bore decay is the shortest fragment that separates them.</p>
+      <div id="frag-out" class="mini-table"></div>
+      <canvas id="frag-canvas" height="180"></canvas>
+
+      <h3>Brief close-restore acceptance (R5)</h3>
+      <div class="buttons">
+        <button id="cr-run" type="button">Run close-restore</button>
+        <label class="inline" for="cr-ms">close
+          <input id="cr-ms" type="range" min="20" max="300" step="10" value="80">
+          <output id="cr-ms-val">80 ms</output>
+        </label>
+      </div>
+      <p class="hint">A note with open holes is briefly closed then restored, with no engine reset.
+        The existing vibration must survive and the note must return.</p>
+      <div id="cr-out" class="mini-table"></div>
+    </section>
+
     <section class="panel notes">
       <h2>What this model is and is not</h2>
       <div class="grid-2">
@@ -147,5 +206,9 @@
     </section>
   </main>
   <script type="module" src="/public/app.js"></script>
+  <script type="module">
+    import { bootToneholeLab } from '/public/tonehole-lab.js';
+    bootToneholeLab();
+  </script>
 </body>
 </html>

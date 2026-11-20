@@ -1,0 +1,66 @@
+{
+  "description": "history-preserving vs from-scratch restart after a pressure-only dip, same fingering",
+  "shortestSeparatingDipMs": 4,
+  "rows": [
+    {
+      "dipMs": 4,
+      "peakDifferencePa": 721,
+      "reconvergeS": null,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 6,
+      "peakDifferencePa": 425,
+      "reconvergeS": null,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 8,
+      "peakDifferencePa": 319,
+      "reconvergeS": null,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 10,
+      "peakDifferencePa": 234,
+      "reconvergeS": 0.01,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 14,
+      "peakDifferencePa": 134,
+      "reconvergeS": 0,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 20,
+      "peakDifferencePa": 58,
+      "reconvergeS": 0,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 30,
+      "peakDifferencePa": 16,
+      "reconvergeS": 0,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 50,
+      "peakDifferencePa": 1,
+      "reconvergeS": 0,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 100,
+      "peakDifferencePa": 0,
+      "reconvergeS": 0,
+      "settledRmsPa": 1434
+    },
+    {
+      "dipMs": 300,
+      "peakDifferencePa": 0,
+      "reconvergeS": 0,
+      "settledRmsPa": 1434
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "description": "VdP register switch openness at constant pressure; width = up - down",
+  "rows": [
+    {
+      "mouthPa": 1500,
+      "upSwitchOpenness": 0.525,
+      "downSwitchOpenness": 0.25,
+      "hysteresisWidth": 0.275
+    },
+    {
+      "mouthPa": 2000,
+      "upSwitchOpenness": 0.525,
+      "downSwitchOpenness": 0.22499999999999998,
+      "hysteresisWidth": 0.3
+    },
+    {
+      "mouthPa": 2500,
+      "upSwitchOpenness": 0.525,
+      "downSwitchOpenness": 0.22499999999999998,
+      "hysteresisWidth": 0.3
+    },
+    {
+      "mouthPa": 3000,
+      "upSwitchOpenness": 0.525,
+      "downSwitchOpenness": 0.22499999999999998,
+      "hysteresisWidth": 0.3
+    }
+  ]
+}

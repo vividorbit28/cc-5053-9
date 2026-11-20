@@ -55,7 +55,10 @@ input[type="range"] {
 }
 input[type="range"]:focus-visible { outline: 2px solid var(--reed); outline-offset: 4px; }
 .hint { color: var(--muted); font-size: 13px; margin: 4px 0 0; }
-.buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; align-items: center; }
+.inline { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+.inline input[type="range"] { width: 130px; margin: 0; }
+.inline output { color: var(--brass); font-variant-numeric: tabular-nums; min-width: 52px; }
 button {
   font: inherit; font-size: 14px; color: var(--ink); background: var(--panel-2);
   border: 1px solid var(--line); border-radius: 9px; padding: 8px 13px;

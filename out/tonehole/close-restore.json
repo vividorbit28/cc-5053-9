@@ -1,0 +1,40 @@
+{
+  "description": "brief hole close then restore with no engine reset; vibration must survive",
+  "rows": [
+    {
+      "closeMs": 20,
+      "vibrationSurvived": true,
+      "minRmsDuringClosePa": 2468,
+      "rmsBeforePa": 2363,
+      "rmsAfterPa": 2348
+    },
+    {
+      "closeMs": 40,
+      "vibrationSurvived": true,
+      "minRmsDuringClosePa": 2468,
+      "rmsBeforePa": 2363,
+      "rmsAfterPa": 2341
+    },
+    {
+      "closeMs": 80,
+      "vibrationSurvived": true,
+      "minRmsDuringClosePa": 2468,
+      "rmsBeforePa": 2363,
+      "rmsAfterPa": 2341
+    },
+    {
+      "closeMs": 150,
+      "vibrationSurvived": true,
+      "minRmsDuringClosePa": 2468,
+      "rmsBeforePa": 2363,
+      "rmsAfterPa": 2342
+    },
+    {
+      "closeMs": 300,
+      "vibrationSurvived": true,
+      "minRmsDuringClosePa": 2468,
+      "rmsBeforePa": 2363,
+      "rmsAfterPa": 2342
+    }
+  ]
+}
